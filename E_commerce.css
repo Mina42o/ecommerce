@@ -1,0 +1,725 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+
+    height: 100%;
+}
+/* header */
+
+.navbar{
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+    background-color: rgb(238, 233, 243);
+    box-shadow: 0 0 114px rgba(0, 0, 0, 0.3);
+
+}
+.navbar .logo p{
+    color: rgb(88, 78, 78);
+    border-bottom: 4px red solid;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+
+.navbar .logo a{
+    text-decoration: none;
+
+}
+
+.navbar .manu li{
+    list-style: none;
+    display: inline-block;
+    
+
+}
+
+.navbar .manu li a{
+    display: block;
+    margin-left: 20px;
+    color: rgb(49, 46, 46);
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+
+
+}
+
+.navbar .manu li .active{
+    border-bottom: 2px solid red;
+}
+
+.navbar .manu li i{
+    color: red;
+}
+
+
+.navbar .manu li a:hover{
+    border-bottom: solid red 1px;
+}
+
+
+
+
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.content .pic{
+    background-image: url('girls-shopping-png-hd--1133.png');
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:  0 6%;
+    height: 100vh;
+    width: 500px;
+    margin-left: 200px;
+  
+
+}
+.content .text{
+    justify-content: center;
+    align-content: center;
+    width: 30vw;
+    height: 100vh;
+}
+ 
+.content .text h1{
+    font-size: 30px;
+    margin-top: -130px;
+
+}
+.content .text p{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left:30px;
+
+}
+
+.content .text button{
+
+
+    margin-top: 30px;
+    padding: 10px 15px 10px 15px;
+    border: none;
+    background: red;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+     margin-left: 80px;
+    
+
+}
+
+.content .text button:hover{
+    background-color: aliceblue;
+    color:red;
+
+}
+
+
+.text2{
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.sec{
+    padding: 10px 5%;
+}
+
+.Product{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+   
+}
+
+
+ .sec .Product .card{
+    width: 300px;
+   background: rgb(225, 238, 238);
+    height: 350px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  
+   
+}
+
+.Product .card .imge img{
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    
+   
+}
+
+ .Product .card .desc{
+    padding: 5px 20px;
+    margin-left: 20px;
+    margin-top: -30px;
+}
+
+
+.Product .card .title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: -5px;
+}
+.Product .card .box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.Product .card .box button{
+    border:  2px solid red;
+    border-radius: 20px;
+    color: brown;
+    padding: 3px 8px 3px 8px;
+
+
+
+}
+
+.Product .card .box button:hover{
+ background:red;
+ color: white;
+
+    }
+
+
+.Product .card .box .price{
+    font-weight:bold;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+         
+}
+
+
+.foot{
+    background-color: rgb(238, 233, 243);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+ 
+}
+.foot .text1 p{
+    font-size: 1rem;
+    color: black;
+    margin-left: 20px;
+
+}
+.foot .text1 p{
+    font-size: 1.3rem;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.foot .text2 p{
+font-size: 1.5rem;
+
+}
+.foot .text2 ul{
+    list-style: none;
+}
+
+.foot .text2 ul li{
+    display: inline;
+
+}
+
+.foot .text2 ul li a i{
+    color: rgb(15, 5, 5);
+}
+
+.foot2{
+    font-weight: 600;
+    background: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.6rem;
+ 
+}
+
+
+
+@media  only screen and (max-width:412px) {
+
+    .navbar .logo p {
+        border-bottom: none;
+
+    }
+
+    .navbar .manu li .active{
+        border-bottom: none;
+    }
+
+
+    .navbar{
+        display: block;
+        width: 300px;
+
+        
+    } 
+
+    .navbar .manu li{
+         display: block;
+         border-bottom: none;
+
+       
+    }
+
+    .navbar .manu li a{
+        text-align: center;
+        
+
+    }
+
+    .content{
+        display: block;
+      
+    }
+
+
+        .content .text{
+            justify-content: center;
+            align-content: center;
+            width: 70vw;
+            height: 100vh;
+        }
+
+        .content .text h1{
+            font-size: 20px;
+            margin-top: -400px;
+        
+        }
+
+
+        .content .text p{
+            font-size: 1rem;
+            margin-top: 20px;
+            margin-left:20px;
+        
+        }
+
+    
+    .content .pic{
+        background-image: url('sh.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+       
+        margin-top: -680px;
+        height: 490px;
+        width: 450px;
+       
+        margin-left: -80px;
+      
+    }
+
+
+    .content .text button{
+
+
+        margin-top: 30px;
+        padding: 10px 15px 10px 15px;
+        border: none;
+        background: rgb(30, 160, 153);
+        color: white;
+        border-radius: 10px;
+        font-size: 10px;
+        cursor: pointer;
+         margin-left: 120px;
+        
+    
+    }
+
+
+
+    .content .text button:hover{
+        background-color: aliceblue;
+        color:rgb(30, 160, 153);
+    
+    }
+
+
+
+    .text2{
+        text-align: center;
+        font-size: 1.4rem;
+        margin-top: 20px;
+        margin-left: -60px;
+    }
+
+
+    .sec{
+        padding: 3px 2%;
+
+    }
+
+
+
+
+    .Produc{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+    
+
+.sec .Product .card{
+    width: 250px;
+   background: rgb(225, 238, 238);
+    height: 350px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+  
+   
+}
+
+.Product .card .imge img{
+    width: 160px;
+    height: 170px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    
+   
+}
+
+
+.Product .card .box button{
+    border:  1px solid red;
+    border-radius: 10px;
+    color: brown;
+    padding: 5px 5px;
+    margin-top: 40px;
+    margin-right: 20px;
+
+
+
+
+
+}
+ 
+.Product .card .box .price{
+    font-weight:bold;
+    font-size: 15px;
+    margin-top: 50px;
+    margin-left: 20px;
+
+         
+}
+
+.foot{
+
+    background-color: rgb(238, 233, 243);
+    display: block;
+    justify-content: space-around;
+    padding: 10px;
+    width: 300px;
+ 
+}
+
+.foot .text1 p{
+    font-size: 1rem;
+    color: black;
+    margin-left: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+
+    
+
+}
+
+.foot .text2 p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+    }.foot .text2 p{
+        font-size: 1rem;
+        
+        }
+
+        .foot2{
+            width: 100;
+            font-weight: 500;
+            background: black;
+            color: white;
+            padding: 20px;
+          
+            font-size: 1.4rem;
+            text-align: center;
+
+         
+        }
+        
+    
+
+}
+
+
+
+
+
+
+
+
+
+@media  only screen and (min-width:413px) and(max-width:600px) {
+
+    .navbar .logo p {
+        border-bottom: none;
+
+    }
+
+    .navbar .manu li .active{
+        border-bottom: none;
+    }
+
+
+    .navbar{
+        display: block;
+        width: 300px;
+
+        
+    } 
+
+    .navbar .manu li{
+         display: block;
+         border-bottom: none;
+
+       
+    }
+
+    .navbar .manu li a{
+        text-align: center;
+        
+
+    }
+
+    .content{
+        display: block;
+      
+    }
+
+
+        .content .text{
+            justify-content: center;
+            align-content: center;
+            width: 70vw;
+            height: 100vh;
+        }
+
+        .content .text h1{
+            font-size: 20px;
+            margin-top: -400px;
+        
+        }
+
+
+        .content .text p{
+            font-size: 1rem;
+            margin-top: 20px;
+            margin-left:20px;
+        
+        }
+
+    
+    .content .pic{
+        background-image: url('sh.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+       
+        margin-top: -680px;
+        height: 490px;
+        width: 450px;
+       
+        margin-left: -80px;
+      
+    }
+
+
+    .content .text button{
+
+
+        margin-top: 30px;
+        padding: 10px 15px 10px 15px;
+        border: none;
+        background: rgb(30, 160, 153);
+        color: white;
+        border-radius: 10px;
+        font-size: 10px;
+        cursor: pointer;
+         margin-left: 120px;
+        
+    
+    }
+
+
+
+    .content .text button:hover{
+        background-color: aliceblue;
+        color:rgb(30, 160, 153);
+    
+    }
+
+
+
+    .text2{
+        text-align: center;
+        font-size: 1.4rem;
+        margin-top: 20px;
+        margin-left: -60px;
+    }
+
+
+    .sec{
+        padding: 3px 2%;
+
+    }
+
+
+
+
+    .Produc{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+    
+
+.sec .Product .card{
+    width: 250px;
+   background: rgb(225, 238, 238);
+    height: 350px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+  
+   
+}
+
+.Product .card .imge img{
+    width: 160px;
+    height: 170px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    
+   
+}
+
+
+.Product .card .box button{
+    border:  1px solid red;
+    border-radius: 10px;
+    color: brown;
+    padding: 5px 5px;
+    margin-top: 40px;
+    margin-right: 20px;
+
+
+
+
+
+}
+ 
+.Product .card .box .price{
+    font-weight:bold;
+    font-size: 15px;
+    margin-top: 50px;
+    margin-left: 20px;
+
+         
+}
+
+.foot{
+
+    background-color: rgb(238, 233, 243);
+    display: block;
+    justify-content: space-around;
+    padding: 10px;
+    width: 300px;
+ 
+}
+
+.foot .text1 p{
+    font-size: 1rem;
+    color: black;
+    margin-left: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+
+    
+
+}
+
+.foot .text2 p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+    }.foot .text2 p{
+        font-size: 1rem;
+        
+        }
+
+        .foot2{
+            width: 100;
+            font-weight: 500;
+            background: black;
+            color: white;
+            padding: 20px;
+          
+            font-size: 1.4rem;
+            text-align: center;
+
+         
+        }
+        
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+    
+
